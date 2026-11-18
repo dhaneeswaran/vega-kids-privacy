@@ -28,20 +28,20 @@ footer { margin-top: 48px; font-size: 0.9rem; color: var(--muted); }
 </header>
 <div class="card">
 
-<p>Vega Kids is a games, stories and learning app for children. A grown-up area sits behind a parent PIN. The app does not require an account, and it has no ads and no in-app purchases. We do not sell personal information.</p>
+<p>Vega Kids is a games, stories and learning app for children. A grown-up area sits behind a short maths question that a child is unlikely to solve (typed only, with a wait after several wrong answers). The app does not require an account, and it has no ads and no in-app purchases. We do not sell personal information.</p>
 
 <h2>What stays on the device</h2>
 <ul>
   <li><strong>Play and learning progress:</strong> stars, coins, streaks, stages, arcade scores, favourites, recently played items, hidden-game choices, and similar settings. These live in the app’s private storage.</li>
   <li><strong>Optional first name</strong> on a child profile (for “who is playing?”).</li>
-  <li><strong>Parent PIN:</strong> a grown-up sets a 4–6 digit PIN on first use. The app stores only a salted cryptographic hash of that PIN, not the PIN itself. After five wrong tries the keypad waits before allowing another attempt. A “forgot PIN” path uses multiplication questions and a press-and-hold step, then lets the grown-up set a new PIN.</li>
+  <li><strong>Parent gate:</strong> opening grown-up settings, the family-tree editor, an external website, or this policy in a browser requires a fresh typed maths question (for example <code>7 × 8 + 5</code>). There is no parent PIN and no password is stored. After five wrong answers the keypad waits before allowing another attempt. A correct answer keeps the grown-up area open for a few minutes.</li>
   <li><strong>Family tree:</strong> names (English and Tamil), relations, optional relationship links, and either a photo the grown-up picked or an on-device avatar. Photos are chosen with the system photo picker (the app does not declare camera or storage permissions). They are stored only on the device, in a folder that is not included in Android backup.</li>
   <li><strong>Optional child enrolment photos:</strong> if a grown-up enrols a child, a small thumbnail and an on-device number summary of the photos (not a cloud face-recognition service) are stored in the same no-backup folder. They are never uploaded.</li>
   <li><strong>Books the family downloads</strong> and colouring pictures the child saves on the device.</li>
   <li><strong>Problem reports:</strong> a crash log may be saved locally. Nothing is sent automatically. A grown-up can choose to share the log through the system share sheet.</li>
 </ul>
 
-<p><strong>Optional Android backup:</strong> the kids app allows Android Auto Backup of <em>progress only</em> (stars, stages, and similar). The parent PIN hash, family photos, avatars and enrolment thumbnails are not in that backup list. A grown-up can turn system backup off in Android settings. If backup is on, Google’s backup service (not Vega) holds that progress.</p>
+<p><strong>Optional Android backup:</strong> the kids app allows Android Auto Backup of <em>progress only</em> (stars, stages, and similar). Family photos, avatars and enrolment thumbnails are not in that backup list. A grown-up can turn system backup off in Android settings. If backup is on, Google’s backup service (not Vega) holds that progress.</p>
 
 <h2>What the app does not collect</h2>
 <p>The app does not create an account, does not use advertising, analytics or crash-reporting SDKs (no Firebase Analytics, no ads, no Crashlytics), and does not declare camera, microphone, location, contacts, phone or storage permissions. Microphone features are compiled off. We do not sell or share personal information for advertising.</p>
@@ -49,8 +49,8 @@ footer { margin-top: 48px; font-size: 0.9rem; color: var(--muted); }
 <p>This version does <strong>not</strong> include AI World (Talk to Teddy, AI story, or “what did I draw?”). That feature is switched off in the app and is not available to children or grown-ups in this release. No prompts or drawings are sent to a cloud AI.</p>
 
 <h2>Internet use</h2>
-<p>The app goes online only for the free-book library or an NCERT textbook download, over HTTPS, to a fixed allow-list of book sources: Project Gutenberg (gutenberg.org and its subdomains), StoryWeaver (storyweaver.org.in), NCERT (ncert.nic.in, www.ncert.nic.in), ePathshala (epathshala.nic.in), and — behind the parent PIN, on the grown-ups’ library — Standard Ebooks, Open Library (including covers.openlibrary.org), the Internet Archive (archive.org and its subdomains), and a link out to Google Play Books (play.google.com). The allow-list also includes storage.googleapis.com for book files or covers served by those sources. A request names a book category, a title a grown-up searched for, or a file to download. It does not include the child’s name, the parent PIN, or a Vega account. Those websites can see the device’s network address, as with any download, and have their own privacy practices.</p>
-<p>The children’s library uses fixed categories (no free-text search). Opening an external website and opening this privacy policy in a browser require the parent PIN.</p>
+<p>The app goes online only for the free-book library or an NCERT textbook download, over HTTPS, to a fixed allow-list of book sources: Project Gutenberg (gutenberg.org and its subdomains), StoryWeaver (storyweaver.org.in), NCERT (ncert.nic.in, www.ncert.nic.in), ePathshala (epathshala.nic.in), and — behind the parent gate, on the grown-ups’ library — Standard Ebooks, Open Library (including covers.openlibrary.org), the Internet Archive (archive.org and its subdomains), and a link out to Google Play Books (play.google.com). The allow-list also includes storage.googleapis.com for book files or covers served by those sources. A request names a book category, a title a grown-up searched for, or a file to download. It does not include the child’s name or a Vega account. Those websites can see the device’s network address, as with any download, and have their own privacy practices.</p>
+<p>The children’s library uses fixed categories (no free-text search). Opening an external website and opening this privacy policy in a browser require the parent gate.</p>
 <p>Cleartext (unencrypted HTTP) traffic is turned off.</p>
 
 <h2>Permissions</h2>
@@ -60,7 +60,7 @@ footer { margin-top: 48px; font-size: 0.9rem; color: var(--muted); }
 <p>The app is designed for a child audience (Designed for Families). We do not knowingly collect a child’s personal information and send it off the device. There are no ads. We do not sell children’s personal information. Grown-ups should review the parent area, the backup setting, family photos, and any book download.</p>
 
 <h2>Deletion</h2>
-<p>Uninstalling the app, or clearing the app’s storage in Android settings, removes on-device data including progress, the PIN hash, family photos and enrolment thumbnails. A grown-up can also delete a person from the family tree or remove a child profile in the parent area. If Android backup was used, turn it off or delete the backup from system settings as well. There is no Vega cloud account to delete.</p>
+<p>Uninstalling the app, or clearing the app’s storage in Android settings, removes on-device data including progress, family photos and enrolment thumbnails. A grown-up can also delete a person from the family tree or remove a child profile in the parent area. If Android backup was used, turn it off or delete the backup from system settings as well. There is no Vega cloud account to delete.</p>
 
 <h2>Contact</h2>
 <p>For privacy questions, contact Dhaneeswaran at <a href="mailto:dhaneeswaran.r@gmail.com">dhaneeswaran.r@gmail.com</a>.</p>
